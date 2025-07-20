@@ -1,11 +1,11 @@
-# Trail Bulk add to Reservation Python Utility
+# Bulk add to Trail Reservation Py Utility
 
 > Written by Owen Ling 18/07/25  
 > Located in Scripting & Automation/ROH/Trail  
 > Version B.1
 
 A simple Python utility to automate the UI process for adding multiple assets to a Trail.fi reservation, using the
-Selenium web UI automation framework.
+Selenium web UI automation framework, written for the ROH.
 
 ## Environment Setup
 
@@ -18,11 +18,9 @@ TRAIL_PASSWORD=foobar1234
 ```
 
 ## Using the utility
-
-- Clone the repo
 - Configure and activate the Python virtual environment:
-
 ```cmd
+cd Trail-Reservations
 python -m venv .venv
 source .venv/bin/activate
 ```
@@ -30,7 +28,7 @@ source .venv/bin/activate
 - `(.venv)` should now be shown at the start of the terminal prompt, e.g.;
 
 ```cmd
-(.venv) wing2 OLI-M-2 ~/everything/is/awesome $
+(.venv) wing2 OLI-M-2 ~/Trail-Reservations $ 
 ```
 
 > [!NOTE]
@@ -46,7 +44,7 @@ pip install -r requirements.txt
 - Identify the reservation ID found in the URL when opened in Trail
 - Run the script
   ```cmd
-  python reservation_bulk_add.py -R <reservation_id> -C <path_to_csv_file> -H
+  python reservation_bulk_add.py -R <reservation_id> -C <path_to_csv_file> -S <site_url> --headless
   ```
 
 ## Command Line Switches
