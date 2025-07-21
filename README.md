@@ -9,6 +9,11 @@ Selenium web UI automation framework, written for the ROH.
 
 ## Environment Setup
 
+Clone the repository
+```cmd
+git clone https://github.com/OLI6532/Trail-Reservations-Bulk-Add
+```
+
 Create a dedicated automated user in Trail with the minimum required privileges for the task and ass their login details
 to a `.env` file as below, located in the same directory as the `bulk_add_to_reservation.py` file.
 
@@ -20,7 +25,7 @@ TRAIL_PASSWORD=foobar1234
 ## Using the utility
 - Configure and activate the Python virtual environment:
 ```cmd
-cd Trail-Reservations
+cd Trail-Reservations-Bulk-Add
 python -m venv .venv
 source .venv/bin/activate
 ```
